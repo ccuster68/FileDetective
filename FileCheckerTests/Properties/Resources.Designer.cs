@@ -63,6 +63,26 @@ namespace FileCheckerTests.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
+        internal static byte[] _2010_pptx {
+            get {
+                object obj = ResourceManager.GetObject("2010.pptx", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] _2010_xlsx {
+            get {
+                object obj = ResourceManager.GetObject("2010.xlsx", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
         internal static byte[] v12_docx {
             get {
                 object obj = ResourceManager.GetObject("v12.docx", resourceCulture);

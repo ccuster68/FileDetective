@@ -28,7 +28,9 @@ namespace FileChecker
                     //    new RangeFileTypeMatcher(new ExactFileTypeMatcher(new byte[] { 0x25, 0x50, 0x44, 0x46 }), 1019))
                     // ... Potentially more in future
             
-            new FileType("Microsoft Word", ".docx", new StartAndEndMatcher("504B030414000600.*", "504B0506.{36}"))
+                    new FileType("MS Word - docx", ".docx", new DocxMatcher(new StartAndEndMatcher("504B030414000600.*", "504B0506.{36}"))),
+                    new FileType("MS Power Point - pptx", ".pptx", new PptxMatcher(new StartAndEndMatcher("504B030414000600.*", "504B0506.{36}"))),
+                    new FileType("MS Excel - Xslx", ".xlsx", new XslxMatcher(new StartAndEndMatcher("504B030414000600.*", "504B0506.{36}")))
                 };
         }
 
